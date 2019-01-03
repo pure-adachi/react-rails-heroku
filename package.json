@@ -1,0 +1,19 @@
+{
+  "name": "react-reails-heroku",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "bundle exec foreman start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pure-adachi/react-reails-heroku.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pure-adachi/react-reails-heroku/issues"
+  },
+  "homepage": "https://github.com/pure-adachi/react-reails-heroku#readme"
+}
