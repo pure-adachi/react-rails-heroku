@@ -4,7 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "bundle exec foreman start"
+    "start": "bundle exec foreman start",
+    "install": "npm run git-clone && npm run setup",
+    "git-clone": "mkdir -p projects && npm run git-clone-backend && npm run git-clone-frontend",
+    "git-clone-backend": "cd projects && git clone https://github.com/pure-adachi/rails-backend.git",
+    "git-clone-frontend": "cd projects && git clone https://github.com/pure-adachi/react-frontend.git",
+    "setup": "bundle install --path vendor/bundle && npm run setup-frontend && npm run setup-backend",
+    "setup-frontend": "cd projects/react-frontend && npm install",
+    "setup-backend": "cd projects/rails-backend && npm install"
   },
   "repository": {
     "type": "git",

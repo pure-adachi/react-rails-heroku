@@ -1,8 +1,9 @@
 # README
 
-## Start
+## Quick Start
 
 ```
+$ npm install
 $ npm start
 ```
 
